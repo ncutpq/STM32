@@ -1,0 +1,91 @@
+git init //把这个目录变成Git可以管理的仓库
+
+git add README.md //将单个文件添加到仓库
+
+git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
+
+git commit -m "first commit" //把文件提交到本地仓库
+
+git remote add origin git@github.com:ncutpq/threadpool.git  //关联远程仓库（只需在第一次提交时关联即可）
+
+git push -u origin master //把本地库的所有内容推送到远程库上
+
+(git push -u origin main-f //把本地库的所有内容推送到远程库上)
+
+=================================================================================================
+
+方法一（拉取远程分支到本地并新建分支）：
+
+拉取远程仓库（某一分支）：git clone -b  <master> git@github.com:wangjiax9/practice.git
+进入项目工程文件夹：cd <project-name>
+切换到本地分支：git checkout  -b <本地分支名>  ## 参数-b会创建新分支并切换
+
+方法二（拉取远程分支到本地）：
+
+拉取远程仓库（main分支）：git clone git@github.com:wangjiax9/practice.git
+进入项目工程文件夹：cd <project-name>
+拉取分支到本地：git fetch
+切换到本地分支：git checkout  <分支名>  
+
+将本地分支添加到远程仓库：git push origin <本地分支名>
+
+
+git 分支管理：https://zhuanlan.zhihu.com/p/137855358
+	https://blog.csdn.net/qq_43530326/article/details/123311067
+
+git拉取指定分支：https://blog.csdn.net/you18131371836/article/details/110404967
+
+git创建新分支并修改后提交到远程仓库：https://blog.csdn.net/Thinkingcao/article/details/106059446
+
+注意：如果新建一个本地仓库的时候如果没有任何操作的情况下进行分支创建（git branch 'branchname'）会报错，要进行一次git add 操作和git commit操作（可以添加一个readme.txt）
+
+
+=================================================================================================
+
+（工作区和暂存区）：https://www.cnblogs.com/beenupper/p/12526914.html
+git 查看修改的文件：git status
+将文件加入暂存区(可使用通配符)：git add <file>
+
+查看文件具体的修改内容： git diff
+
+（工作区和版本库之间文件的差异）：https://blog.csdn.net/qq_39505245/article/details/119899171
+
+git diff HEAD
+
+（暂存区和版本库之间文件的差异）：https://blog.csdn.net/qq_39505245/article/details/119899171
+
+git diff --cached
+
+查看当前分支中最近一次文件修改内容： git show
+查看历史提交脉络：git log
+
+
+=================================================================================================
+
+查看历史版本：git log
+切换到指定的版本：git checkout [version ID]
+切换到指定的版本：git reset --hard [version ID] 
+回退n个版本：git reset --hard HEAD~n
+抵消最近n次提交：git revert -n
+版本回退后提交push报错（强制提交到分支）：git push -f <分支名称>
+
+
+=================================================================================================
+直接增删文件可能不会被git跟踪，使用：
+
+git ls-files 查看跟踪的文件
+
+git rm // 删除不跟踪的文件
+
+git add  // 增加要跟踪的文件
+
+
+=================================================================================================
+循环克隆子文件夹
+
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+
+cd PX4-Autopilot
+git submodule update --init --recursive
+
+
