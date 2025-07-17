@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"c8t6-oled\startup_stm32f103xb.o"
+"c8t6-oled\main.o"
+"c8t6-oled\stm32f1xx_it.o"
+"c8t6-oled\stm32f1xx_hal_msp.o"
+"c8t6-oled\stm32f1xx_hal_gpio_ex.o"
+"c8t6-oled\stm32f1xx_hal_tim.o"
+"c8t6-oled\stm32f1xx_hal_tim_ex.o"
+"c8t6-oled\stm32f1xx_hal.o"
+"c8t6-oled\stm32f1xx_hal_rcc.o"
+"c8t6-oled\stm32f1xx_hal_rcc_ex.o"
+"c8t6-oled\stm32f1xx_hal_gpio.o"
+"c8t6-oled\stm32f1xx_hal_dma.o"
+"c8t6-oled\stm32f1xx_hal_cortex.o"
+"c8t6-oled\stm32f1xx_hal_pwr.o"
+"c8t6-oled\stm32f1xx_hal_flash.o"
+"c8t6-oled\stm32f1xx_hal_flash_ex.o"
+"c8t6-oled\stm32f1xx_hal_exti.o"
+"c8t6-oled\system_stm32f1xx.o"
+"c8t6-oled\oled.o"
+--library_type=microlib --strict --scatter "c8t6-oled\c8t6-oled.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "c8t6-oled.map" -o c8t6-oled\c8t6-oled.axf
