@@ -1,0 +1,390 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\CubMx\WS\IIC-Software\MDK-ARM\IIC-Software.uvprojx
+Project File Date:  06/03/2025
+
+<h2>Output:</h2>
+Build target 'IIC-Software'
+compiling main.c...
+compiling i2c.c...
+compiling 24cxx.c...
+linking...
+Program Size: Code=6292 RO-data=416 RW-data=20 ZI-data=1100  
+FromELF: creating hex file...
+"IIC-Software\IIC-Software.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\CubMx\WS\IIC-Software\MDK-ARM\RTE
+  E:\MDK5\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Load "IIC-Software\\IIC-Software.axf" 
+Set JLink Project File to "E:\CubMx\WS\IIC-Software\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RC" selected (256 KB flash, 48 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDB 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+.
+nclude folders:</h2>
+  E:\CubMx\WS\IIC-Software\MDK-ARM\RTE
+  E:\MDK5\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created
+XX_ReadLenByte(u16 ReadAddr,u8 Len);                                 //指定地址开始读取指定长度数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u8" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u8" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(28): error:  #20: identifier "u8" is undefined
+  u8 AT24CXX_Check(void);  //检查器件
+../Core/Src/main.c: 1 warning, 21 errors
+compiling i2c.c...
+../Core/Inc/i2c.h(46): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+../Core/Inc/i2c.h(61): error:  #20: identifier "u8" is undefined
+  void IIC_Send_Byte(u8 txd);                   //IIC鍙戦�佷竴涓瓧鑺?                     ^
+../Core/Inc/i2c.h(62): error:  #20: identifier "u8" is undefined
+  u8 IIC_Read_Byte(unsigned char ack);//IIC璇诲彇涓�涓瓧鑺?  ^
+../Core/Inc/i2c.h(63): error:  #20: identifier "u8" is undefined
+  u8 IIC_Wait_Ack(void);                                //IIC绛夊緟ACK淇″彿
+../Core/Inc/i2c.h(67): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\i2c.c(28): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms)
+..\Core\Src\i2c.c(30): error:  #20: identifier "u32" is undefined
+        u32 temp;                  
+..\Core\Src\i2c.c(31): error:  #20: identifier "u32" is undefined
+        SysTick->LOAD=(u32)nms*fac_ms;                          //鏃堕棿鍔犺浇(SysTick->LOAD涓?4bit)
+..\Core\Src\i2c.c(31): error:  #65: expected a ";"
+        SysTick->LOAD=(u32)nms*fac_ms;                          //鏃堕棿鍔犺浇(SysTick->LOAD涓?4bit)
+..\Core\Src\i2c.c(51): warning:  #223-D: function "Delay_us" declared implicitly
+      Delay_us(5);
+..\Core\Src\i2c.c(66): warning:  #223-D: function "Delay_us" declared implicitly
+      Delay_us(5);
+..\Core\Src\i2c.c(85): warning:  #223-D: function "Delay_us" declared implicitly
+      Delay_us(4);
+..\Core\Src\i2c.c(96): warning:  #223-D: function "Delay_us" declared implicitly
+          Delay_us(4);
+..\Core\Src\i2c.c(123): warning:  #223-D: function "MX_GPIO_Init" declared implicitly
+        MX_GPIO_Init();
+..\Core\Src\i2c.c(162): error:  #20: identifier "u8" is undefined
+  u8 IIC_Wait_Ack(void)
+..\Core\Src\i2c.c(164): error:  #20: identifier "u8" is undefined
+        u8 ucErrTime=0;
+..\Core\Src\i2c.c(172): error:  #20: identifier "READ_SDA" is undefined
+        while(READ_SDA)
+..\Core\Src\i2c.c(225): error:  #20: identifier "u8" is undefined
+  void IIC_Send_Byte(u8 txd)
+..\Core\Src\i2c.c(227): error:  #20: identifier "u8" is undefined
+    u8 t;   
+..\Core\Src\i2c.c(240): error:  #20: identifier "IIC_SCL" is undefined
+        IIC_SCL=0;
+..\Core\Src\i2c.c(246): error:  #20: identifier "u8" is undefined
+  u8 IIC_Read_Byte(unsigned char ack)
+..\Core\Src\i2c.c(258): error:  #20: identifier "READ_SDA" is undefined
+                if(READ_SDA)receive++;   
+..\Core\Src\i2c.c(266): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\i2c.c: 7 warnings, 16 errors
+compiling 24cxx.c...
+../Core/Inc/i2c.h(46): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+../Core/Inc/i2c.h(61): error:  #20: identifier "u8" is undefined
+  void IIC_Send_Byte(u8 txd);                   //IIC鍙戦�佷竴涓瓧鑺?                     ^
+../Core/Inc/i2c.h(62): error:  #20: identifier "u8" is undefined
+  u8 IIC_Read_Byte(unsigned char ack);//IIC璇诲彇涓�涓瓧鑺?  ^
+../Core/Inc/i2c.h(63): error:  #20: identifier "u8" is undefined
+  u8 IIC_Wait_Ack(void);                                //IIC绛夊緟ACK淇″彿
+../Core/Inc/i2c.h(67): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/24cxx.h(21): error:  #20: identifier "u8" is undefined
+  u8 AT24CXX_ReadOneByte(u16 ReadAddr);                                                 //指定地址读取一个字节
+../Core/Inc/24cxx.h(21): error:  #20: identifier "u16" is undefined
+  u8 AT24CXX_ReadOneByte(u16 ReadAddr);                                                 //指定地址读取一个字节
+../Core/Inc/24cxx.h(22): error:  #20: identifier "u16" is undefined
+  void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite);              //指定地址写入一个字节
+../Core/Inc/24cxx.h(22): error:  #20: identifier "u8" is undefined
+  void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite);              //指定地址写入一个字节
+../Core/Inc/24cxx.h(23): error:  #20: identifier "u16" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len);//指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(23): error:  #20: identifier "u32" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len);//指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(23): error:  #20: identifier "u8" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len);//指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(24): error:  #20: identifier "u32" is undefined
+  u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len);                                 //指定地址开始读取指定长度数据
+../Core/Inc/24cxx.h(24): error:  #20: identifier "u16" is undefined
+  u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len);                                 //指定地址开始读取指定长度数据
+../Core/Inc/24cxx.h(24): error:  #20: identifier "u8" is undefined
+  u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len);                                 //指定地址开始读取指定长度数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u8" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(25): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite); //从指定地址开始写入指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u8" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(26): error:  #20: identifier "u16" is undefined
+  void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead);    //从指定地址开始读出指定长度的数据
+../Core/Inc/24cxx.h(28): error:  #20: identifier "u8" is undefined
+  u8 AT24CXX_Check(void);  //检查器件
+..\Core\Src\24cxx.c(18): error:  #20: identifier "u8" is undefined
+  u8 AT24CXX_ReadOneByte(u16 ReadAddr)
+..\Core\Src\24cxx.c(18): error:  #20: identifier "u16" is undefined
+  u8 AT24CXX_ReadOneByte(u16 ReadAddr)
+..\Core\Src\24cxx.c(20): error:  #20: identifier "u8" is undefined
+        u8 temp=0;                                                                                                                                                       
+..\Core\Src\24cxx.c(43): error:  #20: identifier "u16" is undefined
+  void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite)
+..\Core\Src\24cxx.c(43): error:  #20: identifier "u8" is undefined
+  void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite)
+..\Core\Src\24cxx.c(68): error:  #20: identifier "u16" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)
+..\Core\Src\24cxx.c(68): error:  #20: identifier "u32" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)
+..\Core\Src\24cxx.c(68): error:  #20: identifier "u8" is undefined
+  void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)
+..\Core\Src\24cxx.c(70): error:  #20: identifier "u8" is undefined
+        u8 t;
+..\Core\Src\24cxx.c: 1 warning, 30 errors
+"IIC-Software\IIC-Software.axf" - 67 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\CubMx\WS\IIC-Software\MDK-ARM\RTE
+  E:\MDK5\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created
+STM32F1xx/Include/stm32f103xe.h(75): error:  #101: "UsageFault_IRQn" has already been declared in the current scope
+    UsageFault_IRQn             = -10,    /*!< 6 Cortex-M3 Usage Fault Interrupt                    */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(76): error:  #101: "SVCall_IRQn" has already been declared in the current scope
+    SVCall_IRQn                 = -5,     /*!< 11 Cortex-M3 SV Call Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(77): error:  #101: "DebugMonitor_IRQn" has already been declared in the current scope
+    DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M3 Debug Monitor Interrupt                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(78): error:  #101: "PendSV_IRQn" has already been declared in the current scope
+    PendSV_IRQn                 = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(79): error:  #101: "SysTick_IRQn" has already been declared in the current scope
+    SysTick_IRQn                = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                   */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(82): error:  #101: "WWDG_IRQn" has already been declared in the current scope
+    WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                            */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(83): error:  #101: "PVD_IRQn" has already been declared in the current scope
+    PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt            */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(84): error:  #101: "TAMPER_IRQn" has already been declared in the current scope
+    TAMPER_IRQn                 = 2,      /*!< Tamper Interrupt                                     */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(85): error:  #101: "RTC_IRQn" has already been declared in the current scope
+    RTC_IRQn                    = 3,      /*!< RTC global Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(86): error:  #101: "FLASH_IRQn" has already been declared in the current scope
+    FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                               */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(87): error:  #101: "RCC_IRQn" has already been declared in the current scope
+    RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(88): error:  #101: "EXTI0_IRQn" has already been declared in the current scope
+    EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(89): error:  #101: "EXTI1_IRQn" has already been declared in the current scope
+    EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(90): error:  #101: "EXTI2_IRQn" has already been declared in the current scope
+    EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(91): error:  #101: "EXTI3_IRQn" has already been declared in the current scope
+    EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(92): error:  #101: "EXTI4_IRQn" has already been declared in the current scope
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(93): error:  #101: "DMA1_Channel1_IRQn" has already been declared in the current scope
+    DMA1_Channel1_IRQn          = 11,     /*!< DMA1 Channel 1 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(94): error:  #101: "DMA1_Channel2_IRQn" has already been declared in the current scope
+    DMA1_Channel2_IRQn          = 12,     /*!< DMA1 Channel 2 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(95): error:  #101: "DMA1_Channel3_IRQn" has already been declared in the current scope
+    DMA1_Channel3_IRQn          = 13,     /*!< DMA1 Channel 3 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(96): error:  #101: "DMA1_Channel4_IRQn" has already been declared in the current scope
+    DMA1_Channel4_IRQn          = 14,     /*!< DMA1 Channel 4 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(97): error:  #101: "DMA1_Channel5_IRQn" has already been declared in the current scope
+    DMA1_Channel5_IRQn          = 15,     /*!< DMA1 Channel 5 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(98): error:  #101: "DMA1_Channel6_IRQn" has already been declared in the current scope
+    DMA1_Channel6_IRQn          = 16,     /*!< DMA1 Channel 6 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(99): error:  #101: "DMA1_Channel7_IRQn" has already been declared in the current scope
+    DMA1_Channel7_IRQn          = 17,     /*!< DMA1 Channel 7 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(100): error:  #101: "ADC1_2_IRQn" has already been declared in the current scope
+    ADC1_2_IRQn                 = 18,     /*!< ADC1 and ADC2 global Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(101): error:  #101: "USB_HP_CAN1_TX_IRQn" has already been declared in the current scope
+    USB_HP_CAN1_TX_IRQn         = 19,     /*!< USB Device High Priority or CAN1 TX Interrupts       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(102): error:  #101: "USB_LP_CAN1_RX0_IRQn" has already been declared in the current scope
+    USB_LP_CAN1_RX0_IRQn        = 20,     /*!< USB Device Low Priority or CAN1 RX0 Interrupts       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(103): error:  #101: "CAN1_RX1_IRQn" has already been declared in the current scope
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                   */
+..\Core\Src\i2c.c: 3 warnings, 30 errors
+compiling 24cxx.c...
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(50): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT" (declared at line 158 of "E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include\stm32f10x.h")
+   #define __MPU_PRESENT             0U       /*!< Other STM32 devices does not provide an MPU  */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(51): warning:  #47-D: incompatible redefinition of macro "__NVIC_PRIO_BITS" (declared at line 160 of "E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include\stm32f10x.h")
+  #define __NVIC_PRIO_BITS           4U       /*!< STM32 uses 4 Bits for the Priority Levels    */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(52): warning:  #47-D: incompatible redefinition of macro "__Vendor_SysTickConfig" (declared at line 161 of "E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include\stm32f10x.h")
+  #define __Vendor_SysTickConfig     0U       /*!< Set to 1 if different SysTick Config is used */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(71): error:  #101: "NonMaskableInt_IRQn" has already been declared in the current scope
+    NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                             */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(73): error:  #101: "MemoryManagement_IRQn" has already been declared in the current scope
+    MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M3 Memory Management Interrupt              */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(74): error:  #101: "BusFault_IRQn" has already been declared in the current scope
+    BusFault_IRQn               = -11,    /*!< 5 Cortex-M3 Bus Fault Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(75): error:  #101: "UsageFault_IRQn" has already been declared in the current scope
+    UsageFault_IRQn             = -10,    /*!< 6 Cortex-M3 Usage Fault Interrupt                    */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(76): error:  #101: "SVCall_IRQn" has already been declared in the current scope
+    SVCall_IRQn                 = -5,     /*!< 11 Cortex-M3 SV Call Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(77): error:  #101: "DebugMonitor_IRQn" has already been declared in the current scope
+    DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M3 Debug Monitor Interrupt                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(78): error:  #101: "PendSV_IRQn" has already been declared in the current scope
+    PendSV_IRQn                 = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(79): error:  #101: "SysTick_IRQn" has already been declared in the current scope
+    SysTick_IRQn                = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                   */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(82): error:  #101: "WWDG_IRQn" has already been declared in the current scope
+    WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                            */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(83): error:  #101: "PVD_IRQn" has already been declared in the current scope
+    PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt            */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(84): error:  #101: "TAMPER_IRQn" has already been declared in the current scope
+    TAMPER_IRQn                 = 2,      /*!< Tamper Interrupt                                     */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(85): error:  #101: "RTC_IRQn" has already been declared in the current scope
+    RTC_IRQn                    = 3,      /*!< RTC global Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(86): error:  #101: "FLASH_IRQn" has already been declared in the current scope
+    FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                               */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(87): error:  #101: "RCC_IRQn" has already been declared in the current scope
+    RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(88): error:  #101: "EXTI0_IRQn" has already been declared in the current scope
+    EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(89): error:  #101: "EXTI1_IRQn" has already been declared in the current scope
+    EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(90): error:  #101: "EXTI2_IRQn" has already been declared in the current scope
+    EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(91): error:  #101: "EXTI3_IRQn" has already been declared in the current scope
+    EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(92): error:  #101: "EXTI4_IRQn" has already been declared in the current scope
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                 */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(93): error:  #101: "DMA1_Channel1_IRQn" has already been declared in the current scope
+    DMA1_Channel1_IRQn          = 11,     /*!< DMA1 Channel 1 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(94): error:  #101: "DMA1_Channel2_IRQn" has already been declared in the current scope
+    DMA1_Channel2_IRQn          = 12,     /*!< DMA1 Channel 2 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(95): error:  #101: "DMA1_Channel3_IRQn" has already been declared in the current scope
+    DMA1_Channel3_IRQn          = 13,     /*!< DMA1 Channel 3 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(96): error:  #101: "DMA1_Channel4_IRQn" has already been declared in the current scope
+    DMA1_Channel4_IRQn          = 14,     /*!< DMA1 Channel 4 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(97): error:  #101: "DMA1_Channel5_IRQn" has already been declared in the current scope
+    DMA1_Channel5_IRQn          = 15,     /*!< DMA1 Channel 5 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(98): error:  #101: "DMA1_Channel6_IRQn" has already been declared in the current scope
+    DMA1_Channel6_IRQn          = 16,     /*!< DMA1 Channel 6 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(99): error:  #101: "DMA1_Channel7_IRQn" has already been declared in the current scope
+    DMA1_Channel7_IRQn          = 17,     /*!< DMA1 Channel 7 global Interrupt                      */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(100): error:  #101: "ADC1_2_IRQn" has already been declared in the current scope
+    ADC1_2_IRQn                 = 18,     /*!< ADC1 and ADC2 global Interrupt                       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(101): error:  #101: "USB_HP_CAN1_TX_IRQn" has already been declared in the current scope
+    USB_HP_CAN1_TX_IRQn         = 19,     /*!< USB Device High Priority or CAN1 TX Interrupts       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(102): error:  #101: "USB_LP_CAN1_RX0_IRQn" has already been declared in the current scope
+    USB_LP_CAN1_RX0_IRQn        = 20,     /*!< USB Device Low Priority or CAN1 RX0 Interrupts       */
+../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h(103): error:  #101: "CAN1_RX1_IRQn" has already been declared in the current scope
+    CAN1_RX1_IRQn               = 21,     /*!< CAN1 RX1 Interrupt                                   */
+..\Core\Src\24cxx.c: 3 warnings, 30 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling system_stm32f1xx.c...
+"IIC-Software\IIC-Software.axf" - 90 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\CubMx\WS\IIC-Software\MDK-ARM\RTE
+  E:\MDK5\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  E:\MDK5\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created
