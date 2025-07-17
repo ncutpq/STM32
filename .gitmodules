@@ -1,0 +1,3 @@
+[submodule "rtos-demo"]
+	path = rtos-demo
+	url = https://github.com/ncutpq/rtos-demo.git
